@@ -1,7 +1,7 @@
 namespace Chip8.Command;
 
-// Return from subroutine
-public class Op_00EE: ICommand 
+// Jump
+public class Op_1NNN: ICommand 
 {
     public void Execute()
     {

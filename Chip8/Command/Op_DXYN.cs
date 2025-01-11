@@ -1,7 +1,7 @@
 namespace Chip8.Command;
 
-// Return from subroutine
-public class Op_00EE: ICommand 
+// Display / Draw  
+public class Op_DXYN: ICommand 
 {
     public void Execute()
     {

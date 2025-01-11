@@ -1,7 +1,7 @@
 namespace Chip8.Command;
 
-// Return from subroutine
-public class Op_00EE: ICommand 
+// Skips one instruction if value in VX != VY
+public class Op_9XY0: ICommand 
 {
     public void Execute()
     {

@@ -1,7 +1,7 @@
 namespace Chip8.Command;
 
-// Return from subroutine
-public class Op_00EE: ICommand 
+// Add value NN to VX
+public class Op_7XNN: ICommand 
 {
     public void Execute()
     {

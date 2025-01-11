@@ -1,7 +1,7 @@
 namespace Chip8.Command;
 
-// Return from subroutine
-public class Op_00EE: ICommand 
+// Clear screen
+public class Op_00E0: ICommand 
 {
     public void Execute()
     {
