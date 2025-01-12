@@ -1,9 +1,6 @@
 namespace Chip8.Component.Memory;
 
-public class MainMemory: Memory
+public class MainMemory(int bytes) : IMemory
 {
-    public MainMemory(int bytes)
-    {
-        Data = new byte[bytes];
-    }
+    public byte[] Data { get; } = new byte[bytes];
 }

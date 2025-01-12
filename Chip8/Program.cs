@@ -9,4 +9,3 @@ MemoryLoader.LoadFontToMainMemory(FONT_FILE_PATH, mainMemory);
 MemoryLoader.LoadRomToMainMemory(ROM_FILE_PATH, mainMemory);
 
 
-Console.WriteLine("Loading font to main memory...");
