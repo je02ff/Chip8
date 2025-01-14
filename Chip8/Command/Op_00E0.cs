@@ -1,12 +1,12 @@
-using Chip8.Component.Memory;
+using Chip8.Component;
 
 namespace Chip8.Command;
 
 // Clear screen
-public class Op_00E0(MainMemory mainMemory): ICommand 
+public class Op_00E0(CPU cpu): ICommand 
 {
     public void Execute()
     {
-        Array.Fill(mainMemory.Data, (byte)0, 0x100, 0x100 + (62*32));
+        Array.Clear(cpu.Renderer.PixelScreen, 0, cpu.Renderer.PixelScreen.Length);
     }
 }

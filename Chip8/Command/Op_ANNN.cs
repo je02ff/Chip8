@@ -1,10 +1,13 @@
+using Chip8.Component;
+
 namespace Chip8.Command;
 
 // Sets the index register I to the value NNN
-public class Op_ANNN: ICommand 
+public class Op_ANNN(CPU cpu, Instruction instruction): ICommand 
 {
     public void Execute()
     {
-        throw new NotImplementedException();
+        cpu._index =
+            (short)((instruction.SecondNibble << 8) | (instruction.ThirdNibble << 4) | instruction.FourthNibble);
     }
 }

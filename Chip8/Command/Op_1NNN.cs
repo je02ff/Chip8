@@ -1,10 +1,12 @@
+using Chip8.Component;
+
 namespace Chip8.Command;
 
 // Jump
-public class Op_1NNN: ICommand 
+public class Op_1NNN(CPU cpu, Instruction instruction): ICommand 
 {
     public void Execute()
     {
-        throw new NotImplementedException();
+        cpu._PC = (short)((instruction.SecondNibble << 8) | (instruction.ThirdNibble << 4) | instruction.FourthNibble);
     }
 }
