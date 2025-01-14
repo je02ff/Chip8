@@ -8,6 +8,7 @@ public class Op_6XNN(CPU cpu, Instruction instruction): ICommand
 {
     public void Execute()
     {
-        cpu.Ram.SetValue(instruction.SecondNibble, (byte)((instruction.ThirdNibble << 4) | instruction.FourthNibble));
+     Console.WriteLine("Op_6XNN");
+        // cpu.Ram.SetValue(instruction.SecondNibble, (byte)((instruction.ThirdNibble << 4) | instruction.FourthNibble));
     }
 }

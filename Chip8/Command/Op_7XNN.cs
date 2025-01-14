@@ -7,9 +7,10 @@ public class Op_7XNN(CPU cpu, Instruction instruction) : ICommand
 {
     public void Execute()
     {
-        cpu.Ram.SetValue(instruction.SecondNibble,
-            (byte)(cpu.Ram.GetValue(instruction.SecondNibble)
-                   + (byte)((instruction.ThirdNibble << 4) | instruction.FourthNibble))
-        );
+        // cpu.Ram.SetValue(instruction.SecondNibble,
+        //     (byte)(cpu.Ram.GetValue(instruction.SecondNibble)
+        //            + (byte)((instruction.ThirdNibble << 4) | instruction.FourthNibble))
+        // );
+        Console.WriteLine("Op_7XNN");
     }
 }

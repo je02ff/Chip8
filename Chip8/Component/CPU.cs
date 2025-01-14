@@ -119,7 +119,7 @@ public class CPU
         // Execute
         _controlUnit.Invoke(command);
         
-        Renderer.Render();
+        // Renderer.Render();
     }
 }
 
