@@ -47,9 +47,15 @@ public class Display
             {
                 if (PixelScreen[y, x])
                 {
+                    Console.Write("x");
                     DrawRectangle(x * _pixelScale,  y * _pixelScale, _pixelScale, _pixelScale, _foregroundColor);
                 }
+                else
+                {
+                    Console.Write(" ");
+                }
             }
+            Console.WriteLine();
         }
         EndDrawing();
     }

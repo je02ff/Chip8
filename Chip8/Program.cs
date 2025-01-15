@@ -10,4 +10,5 @@ CPU cpu = new CPU(ROM_FILE_PATH, display);
 while (!Raylib.WindowShouldClose())
 {
     cpu.Cycle();
+    // Task.Delay(100).Wait();
 }
