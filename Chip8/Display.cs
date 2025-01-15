@@ -41,13 +41,13 @@ public class Display
         
         BeginDrawing();
         ClearBackground(_backgroundColor);
-        for (var x = 0; x < _height; x++)
+        for (var y = 0; y < _height; y++)
         {
-            for (var y = 0; y < _width; y++)
+            for (var x = 0; x < _width; x++)
             {
-                if (PixelScreen[x, y])
+                if (PixelScreen[y, x])
                 {
-                    DrawRectangle(y * _pixelScale, x * _pixelScale, _pixelScale, _pixelScale, _foregroundColor);
+                    DrawRectangle(x * _pixelScale,  y * _pixelScale, _pixelScale, _pixelScale, _foregroundColor);
                 }
             }
         }
